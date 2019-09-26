@@ -1,6 +1,6 @@
 <?php
 namespace LaravelAndVueJS\Traits;
-trait Permission
+trait LaravelPermissionToVueJS
 {
 	public function jsPermissions()
 	{
