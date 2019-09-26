@@ -5,6 +5,11 @@
     "require": {
         "spatie/laravel-permission": "^2.0"
     },
+    "autoload": {
+        "psr-4": {
+            "LaravelAndVueJS\\": "src"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
