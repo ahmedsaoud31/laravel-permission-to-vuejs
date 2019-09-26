@@ -53,4 +53,4 @@ Third, pass permissions from Laravel To Vuejs, in HTML header add this code:
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT).
