@@ -1,0 +1,26 @@
+{
+    "name": "ahmedsaoud31/laravel-permission-to-vuejs",
+    "description": "Laravel Permission Package To Use it in VueJs",
+    "type": "metapackage",
+    "require": {
+		"php" : "^7.0",
+        "spatie/laravel-permission": "^3.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/ahmedsaoud31/laravel-permission-to-vuejs",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Abeoelsaoud",
+            "email": "ahmedsaoud31@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
