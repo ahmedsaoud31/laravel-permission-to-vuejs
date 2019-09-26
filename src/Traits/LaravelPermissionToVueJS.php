@@ -1,5 +1,5 @@
 <?php
-namespace LaravelAndVueJS;
+namespace LaravelAndVueJS\Traits;
 trait LaravelPermissionToVueJS
 {
     public function __construct()
