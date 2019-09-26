@@ -17,6 +17,4 @@
             "email": "ahmedsaoud31@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "prefer-stable": true
-}
+    "minimum-stability": "dev"
