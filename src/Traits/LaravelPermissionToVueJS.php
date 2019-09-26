@@ -1,8 +1,8 @@
 <?php
 namespace LaravelAndVueJS\Traits;
-trait LaravelPermissionToVueJS
+trait Permission
 {
-	public function getVuejsAuthAttribute()
+	public function jsPermissions()
 	{
 		return json_encode([
 				'roles' => $this->getRoleNames(),
