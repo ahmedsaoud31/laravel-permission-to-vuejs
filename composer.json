@@ -1,7 +1,7 @@
 {
     "name": "ahmedsaoud31/laravel-permission-to-vuejs",
     "description": "Laravel Permission Package To Use it in VueJs",
-    "type": "metapackage",
+    "type": "plugin",
     "require": {
         "spatie/laravel-permission": "^2.0"
     },
