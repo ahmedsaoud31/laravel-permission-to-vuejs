@@ -3,7 +3,7 @@
     "description": "Laravel Permission Package To Use it in VueJs",
     "type": "metapackage",
     "require": {
-        "spatie/laravel-permission": "^3.0"
+        "spatie/laravel-permission": "^2.0"
     },
     "license": "MIT",
     "authors": [
