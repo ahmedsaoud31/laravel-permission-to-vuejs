@@ -6,15 +6,6 @@
 		"php" : "^7.0",
         "spatie/laravel-permission": "^3.0"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/ahmedsaoud31/laravel-permission-to-vuejs",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "license": "MIT",
     "authors": [
         {
