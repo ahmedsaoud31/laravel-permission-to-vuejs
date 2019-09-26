@@ -1,2 +1,56 @@
-# laravel-permission-to-vuejs
-Laravel Permission Package To Use it in VueJs
+# Laravel permission to Vuejs
+
+After installed you can do like this in [Vuejs](https://vuejs.org/):
+```html
+<div v-if="can('edit post')">
+  <!-- Edit post form -->
+</div>
+
+<div v-if="is('super-admin')">
+  <!-- Show admin tools -->
+</div>
+```
+This package require to use [laravel-permission](https://github.com/spatie/laravel-permission)
+
+## Installation
+
+##### PHP side
+```json
+composer require ahmedsaoud31/laravel-permission-to-vuejs=dev-master
+```
+##### JavaScript side
+```json
+npm i laravel-permission-to-vuejs
+```
+
+
+## Config
+First, add the `LaravelAndVueJS\Traits\LaravelPermissionToVueJS` trait to your `User` model(s):
+```php
+use LaravelAndVueJS\Traits\LaravelPermissionToVueJS;
+
+class User extends Authenticatable
+{
+    use LaravelPermissionToVueJS;
+
+    // ...
+}
+```
+Second, add the `laravel-permission-to-vuejs` plugin in `app.js` file:
+```js
+import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs';
+Vue.use(LaravelPermissionToVueJS);
+```
+Third, pass permissions from Laravel To Vuejs, in HTML header add this code:
+```html
+<script type="text/javascript">
+    window.Laravel = {
+        csrfToken: "{{ csrf_token() }}",
+        jsPermissions: {!! auth()->check()?auth()->user()->jsPermissions():null !!}
+    }
+</script>
+```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
