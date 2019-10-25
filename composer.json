@@ -3,7 +3,7 @@
     "description": "Laravel Permission Package To Use it in VueJs",
     "type": "plugin",
     "require": {
-        "spatie/laravel-permission": "^2.0"
+        "spatie/laravel-permission": ">=2.0"
     },
     "autoload": {
         "psr-4": {
