@@ -12,6 +12,24 @@ After installed you can do like this in [Vuejs](https://vuejs.org/):
 <div v-if="is('super-admin')">
   <!-- Show admin tools -->
 </div>
+
+<!-- you can use OR operator -->
+<div v-if="can('edit post | delete post | publish post')">
+  <!-- Do something -->
+</div>
+
+<div v-if="is('editor | tester | user')">
+  <!-- Do something -->
+</div>
+
+<!-- you can use AND operator -->
+<div v-if="can('edit post & delete post & publish post')">
+  <!-- Do something -->
+</div>
+
+<div v-if="is('editor & tester & user')">
+  <!-- Do something -->
+</div>
 ```
 This package require to use [laravel-permission](https://github.com/spatie/laravel-permission)
 
