@@ -1,13 +1,12 @@
 # Laravel permission to Vuejs
 ## npm package
-[![License](https://img.shields.io/npm/l/laravel-permission-to-vuejs)](https://en.wikipedia.org/wiki/MIT_License)
 [![Total Downloads](https://img.shields.io/npm/dt/laravel-permission-to-vuejs)](https://www.npmjs.com/package/laravel-permission-to-vuejs)
 [![Version](https://img.shields.io/npm/v/laravel-permission-to-vuejs)](https://www.npmjs.com/package/laravel-permission-to-vuejs)
-
+[![License](https://img.shields.io/npm/l/laravel-permission-to-vuejs)](https://en.wikipedia.org/wiki/MIT_License)
 
 ## Composer package
-[![License](https://img.shields.io/packagist/l/ahmedsaoud31/laravel-permission-to-vuejs)](https://en.wikipedia.org/wiki/MIT_License)
 [![Total Downloads](https://img.shields.io/packagist/dt/ahmedsaoud31/laravel-permission-to-vuejs)](https://packagist.org/packages/ahmedsaoud31/laravel-permission-to-vuejs)
+[![License](https://img.shields.io/packagist/l/ahmedsaoud31/laravel-permission-to-vuejs)](https://en.wikipedia.org/wiki/MIT_License)
 
 After installed you can do like this in [Vuejs](https://vuejs.org/):
 ```html
