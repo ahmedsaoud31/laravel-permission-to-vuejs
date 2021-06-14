@@ -9,9 +9,19 @@ trait LaravelPermissionToVueJS
      */
 	public function jsPermissions()
 	{
-		return json_encode([
+		return json_encode($this->getPermissions());
+	}
+
+	public function objPermissions()
+	{
+		return (object) $this->getPermissions();
+	}
+
+	private function getPermissions()
+	{
+		return [
 				'roles' => $this->getRoleNames(),
 				'permissions' => $this->getAllPermissions()->pluck('name'),
-			]);
+			];
 	}
 }
