@@ -1,4 +1,6 @@
 # Laravel permission to Vuejs
+## Update: now support Vue 3
+
 ## npm package
 [![Total Downloads](https://img.shields.io/npm/dt/laravel-permission-to-vuejs)](https://www.npmjs.com/package/laravel-permission-to-vuejs)
 [![Version](https://img.shields.io/npm/v/laravel-permission-to-vuejs)](https://www.npmjs.com/package/laravel-permission-to-vuejs)
