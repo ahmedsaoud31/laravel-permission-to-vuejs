@@ -57,9 +57,15 @@ First, add the `LaravelAndVueJS\Traits\LaravelPermissionToVueJS` trait to your `
 ```php
 use LaravelAndVueJS\Traits\LaravelPermissionToVueJS;
 
+// Spatie package
+use Spatie\Permission\Traits\HasRoles;
+
 class User extends Authenticatable
 {
     use LaravelPermissionToVueJS;
+    
+    // Spatie package
+    use HasRoles;
 
     // ...
 }
