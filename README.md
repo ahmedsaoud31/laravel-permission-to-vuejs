@@ -46,11 +46,15 @@ This package require to use [laravel-permission](https://github.com/spatie/larav
 ```json
 composer require ahmedsaoud31/laravel-permission-to-vuejs=dev-master
 ```
-##### JavaScript side
+##### JavaScript side VueJs 3
 ```json
 npm i laravel-permission-to-vuejs
 ```
 
+##### JavaScript side VueJs 2
+```json
+npm i laravel-permission-to-vuejs@2.0.5
+```
 
 ## Config
 First, add the `LaravelAndVueJS\Traits\LaravelPermissionToVueJS` trait to your `User` model(s):
