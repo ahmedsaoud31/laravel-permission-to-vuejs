@@ -2,7 +2,7 @@
   "name": "laravel-permission-to-vuejs",
   "version": "3.0.0",
   "description": "Laravel Permission Package To Use it in VueJs",
-  "main": "laravel-permission-to-vuejs.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
