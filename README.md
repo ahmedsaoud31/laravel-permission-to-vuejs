@@ -93,6 +93,25 @@ Third, pass permissions from Laravel To Vuejs, in HTML header add this code:
 </script>
 ```
 
+##OR use Axios to get permissons data from server
+```
+// in app.js
+axios.get('/get-permissions').then(
+  response => {
+    window.Laravel.jsPermissions = response.data;
+  }
+);
+import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs'
+
+...
+
+.use(LaravelPermissionToVueJS)
+
+// in laravel route
+Route::get('/get-permissions', function () {
+    return auth()->check()?auth()->user()->jsPermissions():0;
+});
+```
 ## License
 
 The MIT License (MIT).
