@@ -8,7 +8,7 @@
 
 ## Composer package
 [![Total Downloads](https://img.shields.io/packagist/dt/ahmedsaoud31/laravel-permission-to-vuejs)](https://packagist.org/packages/ahmedsaoud31/laravel-permission-to-vuejs)
-[![License](https://img.shields.io/packagist/l/ahmedsaoud31/laravel-permission-to-vuejs)](https://en.wikipedia.org/wiki/MIT_License)
+[![License](https://img.shields.io/npm/l/laravel-permission-to-vuejs)](https://en.wikipedia.org/wiki/MIT_License)
 
 After installed you can do like this in [Vuejs](https://vuejs.org/):
 ```html
