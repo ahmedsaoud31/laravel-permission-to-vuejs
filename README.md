@@ -70,7 +70,7 @@ onMounted(() => {
   handleFetchTeam();
 });
 </script>
-
+```
 This package require to use [laravel-permission](https://github.com/spatie/laravel-permission)
 
 ## Installation
