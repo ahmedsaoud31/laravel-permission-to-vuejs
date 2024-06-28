@@ -38,6 +38,39 @@ After installed you can do like this in [Vuejs](https://vuejs.org/):
   <!-- Do something -->
 </div>
 ```
+## Using `can` and `is` Methods in Vue 3 Setup Script
+
+To utilize the `can` and `is` methods provided by the `laravel-permission-to-vuejs` plugin in a Vue 3 setup script, follow the steps below:
+
+### Example
+
+```html
+<template>
+  <!-- Your component template -->
+</template>
+
+<script setup>
+import { getCurrentInstance } from 'vue';
+
+const { appContext } = getCurrentInstance();
+const globalProperties = appContext.config.globalProperties;
+
+const handleFetchTeam = () => {
+  if (globalProperties.is('someRole')) {
+    console.log('User has the role');
+    // Your logic here
+  } else {
+    console.log('User does not have the role');
+    // Handle case where user does not have the required role
+  }
+};
+
+// Call the function on component mount or any other lifecycle hook as needed
+onMounted(() => {
+  handleFetchTeam();
+});
+</script>
+
 This package require to use [laravel-permission](https://github.com/spatie/laravel-permission)
 
 ## Installation
