@@ -59,4 +59,4 @@ export default {
 
 //// Ensure window.Laravel.jsPermissions is defined with a default value
 window.Laravel = window.Laravel || {}
-window.Laravel.jsPermissions = window.Laravel.jsPermissions || { permissions: 0, roles: 0 }
+window.Laravel.jsPermissions = window.Laravel.jsPermissions || { permissions: [], roles: [] }
