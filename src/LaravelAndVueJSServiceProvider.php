@@ -3,11 +3,6 @@
 namespace LaravelAndVueJS;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Blade;
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Pagination\Paginator;
-use Cache;
 
 class LaravelAndVueJSServiceProvider extends ServiceProvider
 {
