@@ -10,6 +10,13 @@
             "LaravelAndVueJS\\": "src"
         }
     },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"LaravelAndVueJS\\LaravelAndVueJSServiceProvider"
+			]
+		}
+	},
     "license": "MIT",
     "authors": [
         {
