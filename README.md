@@ -38,6 +38,21 @@ After installed you can do like this in [Vuejs](https://vuejs.org/):
   <!-- Do something -->
 </div>
 ```
+
+If you need to use it in <script> or <script setup> tag
+```html
+<script setup>
+  import { is, can } from 'laravel-permission-to-vuejs'
+  
+  if(is('super-admin')){
+    // do admin actions
+  }
+	
+  if(can('edit post')){
+    // do edit post action
+  }
+</script>
+```
 This package require to use [laravel-permission](https://github.com/spatie/laravel-permission)
 
 ## Installation
@@ -93,24 +108,15 @@ Third, pass permissions from Laravel To Vuejs, in HTML header add this code:
 </script>
 ```
 
-##OR use Axios to get permissons data from server
-```
-// in app.js
-axios.get('/get-permissions').then(
-  response => {
-    window.Laravel.jsPermissions = response.data;
-  }
-);
-import LaravelPermissionToVueJS from 'laravel-permission-to-vuejs'
+If you need to update roles and permission or reload user authintaction after switch user without reload the application, You can use reloadRolesAndPermissions() function
+```html
+// in component
+<script>
+    import { reloadRolesAndPermissions } from 'laravel-permission-to-vuejs'
 
-...
-
-.use(LaravelPermissionToVueJS)
-
-// in laravel route
-Route::get('/get-permissions', function () {
-    return auth()->check()?auth()->user()->jsPermissions():0;
-});
+    // after your event call reloadRolesAndPermissions() function
+    reloadRolesAndPermissions()
+</script>
 ```
 ## License
 
