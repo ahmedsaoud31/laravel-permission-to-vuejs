@@ -52,7 +52,7 @@ class LaravelPermissionToVue
 		return _return
 	}
 
-	loadPermissions = function(route = '/get-laravel-permission-to-vuejs'){
+	reloadRolesAndPermissions = function(route = '/get-laravel-permission-to-vuejs'){
 		axios.get(route).then(
 		  response => {
 		    window.Laravel.jsPermissions = response.data
@@ -72,8 +72,8 @@ export default {
 
 const is = lp.is
 const can = lp.can
-const loadPermissions = lp.loadPermissions
-export {is, can, loadPermissions}
+const reloadRolesAndPermissions = lp.reloadRolesAndPermissions
+export {is, can, reloadRolesAndPermissions}
 
 //// Ensure window.Laravel.jsPermissions is defined with a default value
 window.Laravel = window.Laravel || {}
