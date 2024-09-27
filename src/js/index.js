@@ -52,8 +52,8 @@ class LaravelPermissionToVue
 		return _return
 	}
 
-	reloadRolesAndPermissions = function(route = '/get-laravel-permission-to-vuejs'){
-		axios.get(route).then(
+	reloadRolesAndPermissions = async function(route = '/get-laravel-permission-to-vuejs'){
+		await axios.get(route).then(
 		  response => {
 		    window.Laravel.jsPermissions = response.data
 		  }
